@@ -404,6 +404,7 @@ $("#filterUnitKerja").on("change", (e) => {
 						deleteData(item.id);
 					});
 				} else {
+					$("#filtered").remove();
 					$("#dataTable").append(`<tbody id=\"filtered\">
 					<tr><td colspan="15" class="text-center font-weight-bold">Data Tidak Ada</td></tr></tbody>`);
 				}
